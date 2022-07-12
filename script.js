@@ -43,13 +43,11 @@ function checkInputs(e) {
 	}
 	//valid regex
 	if (inputEmail.value.match(validRegex)) {
-		alert("eo");
 		return true;
 	} else {
 		inputEmail.placeholder = "email@example/com";
 		inputEmail.classList.add("validinput");
 		emailError.innerText = "Looks like this is not email";
-		console.log("chuj");
 		return false;
 	}
 }
