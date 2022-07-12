@@ -1,136 +1,154 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 body {
-    background-image: url(images/bg-intro-desktop.png);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-color:hsl(0, 100%, 74%);
-    background-size: cover;
-    font-size: 16px;
-    height: 100vh;
+	background-image: url(images/bg-intro-desktop.png);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-repeat: no-repeat;
+	background-color: hsl(0, 100%, 74%);
+	background-size: cover;
+	font-size: 16px;
+	height: 100vh;
 }
-.container{
-    display: flex;
-    width: 100vh;
-    min-height:100vh;
-    align-items: center;
-    justify-content: center;
-
+.container {
+	display: flex;
+	width: 100vh;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
 }
-.leftcontent{
-    display: flex;
-    align-items: center;
-    align-content: space-between;
-    justify-content: center;
-    flex-direction: column;
-    flex-grow: 2;
-    width: 500px;
-    height: 500px;
+.leftcontent {
+	display: flex;
+	align-items: center;
+	align-content: space-between;
+	justify-content: center;
+	flex-direction: column;
+	flex-grow: 2;
+	width: 500px;
+	height: 500px;
 }
-.leftcontent h1{
-    color:hsl(0, 0%, 100%);
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    width:500px;
-    font-size: 55px;
-    margin-right: 150px;
-    margin-top: 25px;
+.leftcontent h1 {
+	color: hsl(0, 0%, 100%);
+	font-family: "Outfit", sans-serif;
+	font-weight: 700;
+	width: 500px;
+	font-size: 55px;
+	margin-right: 150px;
+	margin-top: 25px;
 }
-.leftcontent p{
-    color:#fff8f1;
-    font-family: 'Outfit', sans-serif;
-    width:500px;
-    margin-top: 10px;
-    margin-right: 150px;
+.leftcontent p {
+	color: #fff8f1;
+	font-family: "Outfit", sans-serif;
+	width: 500px;
+	margin-top: 10px;
+	margin-right: 150px;
 }
-.rightcontent{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:500px;
-    height: 600px;
-    flex-direction: column;
+.rightcontent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 500px;
+	height: 600px;
+	flex-direction: column;
 }
-.free{
-    display: flex;
-    background-color:hsl(248, 32%, 49%);
-    align-items: center;
-    justify-content: center;
-    width: 450px; 
-    height: 50px;
-    border-radius: 9px;
-    color:hsl(0, 0%, 100%);
-    font-weight: lighter;
-    font-family: 'Outfit', sans-serif;
-    box-shadow: 0px 11px 13px -3px rgba(0, 0, 0, 0.6)
+.free {
+	display: flex;
+	background-color: hsl(248, 32%, 49%);
+	align-items: center;
+	justify-content: center;
+	width: 450px;
+	height: 50px;
+	border-radius: 9px;
+	color: hsl(0, 0%, 100%);
+	font-weight: lighter;
+	font-family: "Outfit", sans-serif;
+	box-shadow: 0px 11px 13px -3px rgba(0, 0, 0, 0.6);
 }
-.form{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    width:450px;
-    height: 460px;
-    border-radius: 8px;
-    background-color:hsl(0, 0%, 100%);
-    box-shadow: 0px 11px 13px -3px rgba(0, 0, 0, 0.6);
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+	width: 450px;
+	height: 460px;
+	border-radius: 8px;
+	background-color: hsl(0, 0%, 100%);
+	box-shadow: 0px 11px 13px -3px rgba(0, 0, 0, 0.6);
 }
-.form input{
-    border: 1px solid hsl(246, 25%, 77%);
-    margin-top: 10px;
-    margin-left: 20px;
-    padding-left: 30px;
-    width:400px;
-    height: 50px;
-    border-radius: 5px;
+input {
+	display: flex;
+	border: 1px solid hsl(246, 25%, 77%);
+	margin-top: 10px;
+	margin-left: 10px;
+	padding-left: 30px;
+	width: 400px;
+	height: 50px;
+	border-radius: 5px;
+	order: 1;
 }
 .form p {
-    text-align: center;
-    margin-top: 15px;
-    color:hsl(246, 25%, 77%);
-    font-family: 'Outfit', sans-serif;
-    font-size: 15px;
+	text-align: center;
+	margin-top: 15px;
+	color: hsl(246, 25%, 77%);
+	font-family: "Outfit", sans-serif;
+	font-size: 15px;
 }
-.form input[type=button]{
-    background-color:hsl(154, 59%, 51%);
-    font-family: 'Outfit', sans-serif;
-    color:hsl(0, 0%, 100%);
-    text-transform: uppercase;
-    font-weight: 600;
+.form button {
+	background-color: hsl(154, 59%, 51%);
+	font-family: "Outfit", sans-serif;
+	color: hsl(0, 0%, 100%);
+	text-transform: uppercase;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding-left: 30px;
+	width: 400px;
+	height: 50px;
+	font-weight: 600;
+	cursor: pointer;
 }
-.form input::placeholder{
-    font-family: 'Outfit', sans-serif;
-    font-weight: 600;
+.form input::placeholder {
+	font-family: "Outfit", sans-serif;
+	font-weight: 600;
 }
 .form a {
-    text-decoration: none;
-    color:hsl(0, 100%, 74%);
-    font-weight: bold;
+	text-decoration: none;
+	color: hsl(0, 100%, 74%);
+	font-weight: bold;
 }
-footer{
-    display: flex;
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:60px;		
-    align-items: center;
-    justify-content: center;
+footer {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
 }
-label{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    margin-right: 25px;
-
+label {
+	margin-top: -12px;
+	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
+	margin-right: 25px;
+	color: hsl(0, 100%, 74%);
+	font-family: "Outfit", sans-serif;
 }
-.form input[type=text]:focus, .form input[type=password]:focus , .form input[type=email]:focus{
-    color:hsl(248, 32%, 49%);
-    outline: none !important;
-    border:2px solid hsl(248, 32%, 49%);
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form input[type="email"]:focus {
+	color: hsl(248, 32%, 49%);
+	outline: none !important;
+	border: 2px solid hsl(248, 32%, 49%);
+}
+.validinput {
+	background-position: 90% 50%;
+	background-image: url(images/icon-error.svg);
+	background-repeat: no-repeat;
+	border: 2px solid hsl(0, 100%, 74%);
 }
