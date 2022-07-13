@@ -141,6 +141,7 @@ label {
 	margin-right: 25px;
 	color: hsl(0, 100%, 74%);
 	font-family: "Outfit", sans-serif;
+	transition: 0.7s ease-out;
 }
 .form input[type="text"]:focus,
 .form input[type="password"]:focus,
@@ -156,7 +157,7 @@ label {
 	border: 2px solid hsl(0, 100%, 74%);
 }
 /* MOBILE */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
 	body {
 		background-image: url(images/bg-intro-desktop.png);
 		display: flex;
