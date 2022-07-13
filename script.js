@@ -37,10 +37,15 @@ function checkInputs(e) {
 	if (inputPassword.value === "" || inputPassword.value == null) {
 		inputPassword.classList.add("validinput");
 		passwordError.innerText = "Password cannot be empty";
+	} else if (inputPassword.value.length < 8) {
+		inputPassword.classList.add("validinput");
+		passwordError.innerText =
+			"Password length must be atleast 8 characters";
 	} else if (inputPassword.value === inputPassword.value) {
 		inputPassword.classList.remove("validinput");
 		passwordError.innerText = "";
 	}
+
 	//valid regex
 	if (inputEmail.value.match(validRegex)) {
 		return true;
