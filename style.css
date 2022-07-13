@@ -98,12 +98,14 @@ input {
 	font-size: 15px;
 }
 .form button {
+	border-radius: 6px;
+	border: 1px solid hsl(154, 58%, 40%);
 	background-color: hsl(154, 59%, 51%);
 	font-family: "Outfit", sans-serif;
 	color: hsl(0, 0%, 100%);
 	text-transform: uppercase;
 	margin-top: 10px;
-	margin-left: 20px;
+	margin-left: 10px;
 	padding-left: 30px;
 	width: 400px;
 	height: 50px;
@@ -151,4 +153,160 @@ label {
 	background-image: url(images/icon-error.svg);
 	background-repeat: no-repeat;
 	border: 2px solid hsl(0, 100%, 74%);
+}
+/* MOBILE */
+@media screen and (max-width: 500px) {
+	body {
+		background-image: url(images/bg-intro-desktop.png);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-repeat: no-repeat;
+		background-color: hsl(0, 100%, 74%);
+		background-size: cover;
+		font-size: 16px;
+		height: 120vh;
+	}
+	.container {
+		display: flex;
+		width: 100vh;
+		min-height: 100vh;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.leftcontent {
+		display: flex;
+		align-items: center;
+		align-content: space-between;
+		justify-content: center;
+		flex-direction: column;
+		margin-left: 150px;
+		width: 200px;
+		height: 750px;
+	}
+	.leftcontent h1 {
+		color: hsl(0, 0%, 100%);
+		font-family: "Outfit", sans-serif;
+		font-weight: 700;
+		margin-top: 30px;
+		width: 250px;
+		font-size: 30px;
+		margin-left: 10px;
+	}
+	.leftcontent p {
+		text-align: center;
+		color: #fff8f1;
+		font-family: "Outfit", sans-serif;
+		width: 260px;
+		font-size: 15px;
+	}
+
+	.rightcontent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 500px;
+		height: 500px;
+		flex-direction: column;
+	}
+
+	.free {
+		display: flex;
+		background-color: hsl(248, 32%, 49%);
+		align-items: center;
+		justify-content: center;
+		width: 327px;
+		height: 90px;
+		border-radius: 9px;
+		color: hsl(0, 0%, 100%);
+		font-weight: lighter;
+		font-family: "Outfit", sans-serif;
+		box-shadow: 0px 11px 13px -3px rgb(0 0 0 / 60%);
+		margin-top: 130px;
+	}
+	.free p {
+		flex-direction: column;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 300px;
+		height: 60px;
+	}
+
+	.rightcontent {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 200px;
+		height: 200px;
+		flex-direction: column;
+	}
+
+	.form {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10px;
+		width: 350px;
+		height: 398px;
+		border-radius: 8px;
+		background-color: hsl(0, 0%, 100%);
+		box-shadow: 0px 11px 13px -3px rgb(0 0 0 / 60%);
+	}
+	input {
+		margin-top: 30px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid hsl(246, 25%, 77%);
+		margin-left: 10px;
+		padding-left: 30px;
+		width: 320px;
+		height: 40px;
+		border-radius: 5px;
+	}
+	.form button {
+		background-color: hsl(154, 59%, 51%);
+		font-family: "Outfit", sans-serif;
+		color: hsl(0, 0%, 100%);
+		text-transform: uppercase;
+		margin-top: 10px;
+		margin-left: 10px;
+		padding-left: 30px;
+		width: 320px;
+		height: 35px;
+		font-weight: 600;
+		cursor: pointer;
+	}
+	form {
+		height: 400px;
+	}
+	.form p {
+		margin-top: -1px;
+		color: hsl(246, 25%, 77%);
+		font-family: "Outfit", sans-serif;
+		font-size: 12px;
+	}
+	label {
+		margin-top: -20px;
+		font-size: 12px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-end;
+		margin-right: 25px;
+		color: hsl(0, 100%, 74%);
+		font-family: "Outfit", sans-serif;
+	}
+	footer {
+		display: flex;
+		position: absolute;
+		bottom: 0;
+		top: 160%;
+		width: 100%;
+		height: 60px;
+		align-items: center;
+		justify-content: center;
+	}
 }
