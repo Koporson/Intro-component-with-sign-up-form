@@ -89,6 +89,7 @@ input {
 	height: 50px;
 	border-radius: 5px;
 	order: 1;
+	transition: 0.7s ease-out;
 }
 .form p {
 	text-align: center;
